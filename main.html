@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Transitions with Named Lines and Arrows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar with dropdown lists -->
+<div class="navbar">
+    <div class="dropdown">
+        <!-- File options dropdown -->
+        <select>
+            <option value="newFile">New File</option>
+            <option value="save">Save</option>
+            <option value="saveAs">Save As</option>
+            <option value="openFile">Open File</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <!-- Create options dropdown -->
+        <select id="createOptionsSelect">
+            <option value="create-state">Create State</option>
+            <option value="createTransition">Create Transition</option>
+            <option value="createLoop">Create Loop</option>
+            <option value="set_init">Set Initial State</option>
+            <option value="set_fin">Set Final State</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <!-- Delete options dropdown -->
+        <select>
+            <option value="deleteState">Delete State</option>
+            <option value="deleteTransition">Delete Transition</option>
+            <option value="deleteLoop">Delete Loop</option>
+        </select>
+    </div>
+</div>
+
+<!-- Canvas -->
+<canvas id="myCanvas"></canvas>
+
+<script src="app.js"></script>
+</body>
+</html>

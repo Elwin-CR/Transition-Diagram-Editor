@@ -1,0 +1,51 @@
+/* General styles */
+#myCanvas {
+    border: 1px solid black;  /* This will make the canvas visible */
+    display: block;           /* Ensures the canvas is displayed as a block-level element */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Dropdown container */
+.dropdown {
+    outline: none;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling for select dropdown */
+select {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 200px;
+    display: block; /* Make it always visible */
+    outline: none;
+}
+
+/* Optional: Styling for the select dropdown to have a small margin on the top */
+.dropdown select {
+    margin-top: 5px;
+}
+
+/* Remove focus outline from select box */
+select:focus {
+    outline: none;
+}
